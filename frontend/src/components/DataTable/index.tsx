@@ -29,7 +29,7 @@ const DataTable = () => {
 
     return (
         <>
-            <Pagination page={page}  onPageChange={changePage}/>
+            <Pagination page={page}  onPageChange={changePage} />
             <div className="table-responsive">
                 <table className="table table-striped table-sm">
                     <thead>
@@ -37,7 +37,7 @@ const DataTable = () => {
                             <th>Data</th>
                             <th>Vendedor</th>
                             <th>Clientes visitados</th>
-                            <th>Negócios fechados</th>
+                            <th>Negócios fechados</th> 
                             <th>Valor</th>
                         </tr>
                     </thead>
@@ -54,6 +54,7 @@ const DataTable = () => {
                     </tbody>
                 </table>
             </div>
+            <Pagination page={page}  onPageChange={changePage} />
         </>
     );
 }
